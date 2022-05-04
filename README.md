@@ -8,13 +8,13 @@ lesson2.py - маршрутизация, export FLASK_APP=lesson2.py
 лабораторная работа 3:
 
 >>> from flask import url_for  <br />
->>> from lesson3 import app
->>> with app.test_request_context('/api'): url_for('index')
-... 
-'/'
->>> with app.test_request_context('/api'): url_for('index', _external=True)
-... 
-'http://localhost/'
->>> with app.test_request_context('/api'): url_for('index', user_id = 100)
-... 
-'/?user_id=100'
+>>> from lesson3 import app  <br />
+>>> with app.test_request_context('/api'): url_for('index') <br />
+...  <br />
+'/' <br />
+>>> with app.test_request_context('/api'): url_for('index', _external=True) <br />
+...  <br />
+'http://localhost/' <br />
+>>> with app.test_request_context('/api'): url_for('index', user_id = 100) <br />
+...  <br />
+'/?user_id=100' <br />
