@@ -7,7 +7,7 @@ lesson2.py - маршрутизация, export FLASK_APP=lesson2.py
 
 лабораторная работа 3:
 
->>> from flask import url_for //
+>>> from flask import url_for  <br />
 >>> from lesson3 import app
 >>> with app.test_request_context('/api'): url_for('index')
 ... 
